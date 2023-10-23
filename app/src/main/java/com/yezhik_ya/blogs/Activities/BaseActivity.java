@@ -17,8 +17,4 @@ public abstract class BaseActivity extends AppCompatActivity
 
     protected abstract void initializeViews();
     protected abstract void setListeners();
-
-    public abstract void setValidation();
-
-    public abstract boolean validate();
 }

@@ -2,7 +2,9 @@ package com.yezhik_ya.blogs.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import com.yezhik_ya.blogs.R;
@@ -29,7 +31,10 @@ public class MainActivity extends BaseActivity
     @Override
     protected void setListeners()
     {
-        //Listener to btnAddPost
+        btnAddPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { startActivity(new Intent(MainActivity.this, BlogPostActivity.class)); }
+        });
     }
 
 }

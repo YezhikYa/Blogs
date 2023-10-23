@@ -22,9 +22,8 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class BlogPostActivity extends BaseActivity
+public class BlogPostActivity extends BaseActivity implements EntryValidation
 {
-    private BlogsViewModel blogsViewModel;
     private EditText etAuthor, etTitle, etContent, etDate;
     private ImageButton ibCalendar;
     @Override
@@ -52,8 +51,7 @@ public class BlogPostActivity extends BaseActivity
         ibCalendar.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 MaterialDatePicker.Builder builder = MaterialDatePicker.Builder.datePicker();
                 builder.setTitleText("Select date");
                 builder.setTextInputFormat(new SimpleDateFormat("dd/MM/yyyy"));
@@ -81,8 +79,7 @@ public class BlogPostActivity extends BaseActivity
 
 
                 // אישור התאריך
-                picker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener()
-                {
+                picker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener() {
                     @Override
                     public void onPositiveButtonClick(Object selection)
                     {
@@ -97,8 +94,7 @@ public class BlogPostActivity extends BaseActivity
                 });
 
                 // ביטול התאריך
-                picker.addOnCancelListener(new DialogInterface.OnCancelListener()
-                {
+                picker.addOnCancelListener(new DialogInterface.OnCancelListener() {
                     @Override
                     public void onCancel(DialogInterface dialog)
                     {
