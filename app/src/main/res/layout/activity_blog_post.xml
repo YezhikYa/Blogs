@@ -83,7 +83,7 @@
 
     <EditText
         android:id="@+id/etDate"
-        android:layout_width="330dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
@@ -93,14 +93,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTitle" />
 
-    <ImageView
-        android:id="@+id/ivCalendar"
+    <ImageButton
+        android:id="@+id/ibCalendar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="@+id/etDate"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Calendar"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toTopOf="@+id/etContent"
+        app:layout_constraintStart_toEndOf="@+id/etDate"
         app:layout_constraintTop_toBottomOf="@+id/etTitle"
         app:srcCompat="@drawable/calendar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

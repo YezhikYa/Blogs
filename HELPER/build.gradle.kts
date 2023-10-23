@@ -1,19 +1,16 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
 }
 
 android {
-    namespace = "com.yezhik_ya.blogs"
+    namespace = "com.yezhik_ya.helper"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.yezhik_ya.blogs"
         minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -34,10 +31,7 @@ android {
 dependencies {
 
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation(project(mapOf("path" to ":VIEWMODEL")))
-    implementation(project(mapOf("path" to ":VIEWMODEL")))
+    implementation("com.google.android.material:material:1.10.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
