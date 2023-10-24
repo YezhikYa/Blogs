@@ -18,6 +18,8 @@ public class MainActivity extends BaseActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        initializeViews();
     }
 
     @Override
@@ -31,7 +33,8 @@ public class MainActivity extends BaseActivity
     @Override
     protected void setListeners()
     {
-        btnAddPost.setOnClickListener(new View.OnClickListener() {
+        btnAddPost.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) { startActivity(new Intent(MainActivity.this, BlogPostActivity.class)); }
         });

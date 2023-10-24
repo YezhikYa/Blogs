@@ -11,6 +11,15 @@ import com.google.android.material.datepicker.CalendarConstraints;
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
 import com.yezhik_ya.blogs.R;
+import com.yezhik_ya.helper.AlertUtil;
+import com.yezhik_ya.helper.DateUtil;
+import com.yezhik_ya.helper.inputValidators.DateRule;
+import com.yezhik_ya.helper.inputValidators.EntryValidation;
+import com.yezhik_ya.helper.inputValidators.NameRule;
+import com.yezhik_ya.helper.inputValidators.Rule;
+import com.yezhik_ya.helper.inputValidators.RuleOperation;
+import com.yezhik_ya.helper.inputValidators.TextRule;
+import com.yezhik_ya.helper.inputValidators.Validator;
 import com.yezhik_ya.viewmodel.BlogsViewModel;
 
 import java.io.ObjectInputValidation;
@@ -31,6 +40,8 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog_post);
+
+        initializeViews();
     }
 
     @Override
@@ -51,20 +62,18 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
         ibCalendar.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 MaterialDatePicker.Builder builder = MaterialDatePicker.Builder.datePicker();
                 builder.setTitleText("Select date");
                 builder.setTextInputFormat(new SimpleDateFormat("dd/MM/yyyy"));
 
-                // הגבלת טווח התאריכים לבחירה
                 CalendarConstraints constraint = null;
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
                     constraint = DateUtil.buidCalendarConstrains(LocalDate.now().minusDays(10), LocalDate.now());
 
                 builder.setCalendarConstraints(constraint);
 
-                // במידה ויש תאריך בתיבת בקלט
-                // התאריכון יפתח על התאריך הרשום
                 if (!etDate.getText().toString().isEmpty())
                 {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -74,12 +83,10 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
                     }
                 }
 
-
                 MaterialDatePicker picker = builder.build();
 
-
-                // אישור התאריך
-                picker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener() {
+                picker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener()
+                {
                     @Override
                     public void onPositiveButtonClick(Object selection)
                     {
@@ -93,8 +100,8 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
                     }
                 });
 
-                // ביטול התאריך
-                picker.addOnCancelListener(new DialogInterface.OnCancelListener() {
+                picker.addOnCancelListener(new DialogInterface.OnCancelListener()
+                {
                     @Override
                     public void onCancel(DialogInterface dialog)
                     {
@@ -121,9 +128,7 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
         Validator.add(new TextRule(etTitle, RuleOperation.TEXT, "Title is wrong", 4, 50, true));
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-        {
             Validator.add(new DateRule(etDate, RuleOperation.DATE, "Wrong date", LocalDate.now().minusDays(10), LocalDate.now()));
-        };
 
         Validator.add(new Rule(etContent, RuleOperation.REQUIRED, "Please enter content"));
 
