@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import androidx.lifecycle.Observer;
 
 import com.google.android.material.datepicker.CalendarConstraints;
 import com.google.android.material.datepicker.MaterialDatePicker;
@@ -35,6 +38,7 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
 {
     private EditText etAuthor, etTitle, etContent, etDate;
     private ImageButton ibCalendar;
+    private BlogsViewModel blogsViewModel;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -139,4 +143,20 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
     {
         return Validator.validate();
     }
+
+    public void setObservers()
+    {
+        blogsViewModel.getSuccessOperation().observe(this, new Observer<Boolean>()
+        {
+            @Override
+            public void onChanged(Boolean aBoolean)
+            {
+                if (aBoolean)
+                    Toast.makeText(BlogPostActivity.this,
+                            "Saved successfully !",
+                            Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
 }

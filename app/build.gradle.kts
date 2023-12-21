@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.yezhik_ya.blogs"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.yezhik_ya.blogs"

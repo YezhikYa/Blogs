@@ -5,7 +5,7 @@ import android.widget.EditText;
 
 import java.time.LocalDate;
 
-import co.il.shivhit.helper.DateUtil;
+import com.yezhik_ya.helper.DateUtil;
 
 public class DateRule extends Rule{
     private static LocalDate lowBound;

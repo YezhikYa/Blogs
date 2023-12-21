@@ -23,31 +23,31 @@
 
     <EditText
         android:id="@+id/etAuthor"
-        android:layout_width="380dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="Author"
         android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/etTitle"
-        android:layout_width="380dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Title"
         android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAuthor" />
 
     <EditText
         android:id="@+id/etContent"
-        android:layout_width="380dp"
+        android:layout_width="350dp"
         android:layout_height="220dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
@@ -61,8 +61,8 @@
         android:id="@+id/btnCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="84dp"
         android:backgroundTint="#858585"
         android:text="Cancel"
         android:textStyle="bold"
@@ -73,8 +73,8 @@
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
         android:backgroundTint="#3F62F3"
         android:text="Save"
         android:textStyle="bold"
@@ -83,7 +83,7 @@
 
     <EditText
         android:id="@+id/etDate"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"

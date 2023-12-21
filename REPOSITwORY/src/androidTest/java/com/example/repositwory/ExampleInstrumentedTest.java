@@ -1,4 +1,4 @@
-package com.yezhik_ya.repository;
+package com.example.repositwory;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.yezhik_ya.repository.test", appContext.getPackageName());
+        assertEquals("com.example.repositwory.test", appContext.getPackageName());
     }
 }
