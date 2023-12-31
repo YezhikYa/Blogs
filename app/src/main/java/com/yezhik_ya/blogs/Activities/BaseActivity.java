@@ -1,8 +1,8 @@
 package com.yezhik_ya.blogs.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.yezhik_ya.blogs.R;
 

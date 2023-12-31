@@ -1,11 +1,17 @@
 package com.yezhik_ya.blogs.Activities;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.datepicker.CalendarConstraints;
 import com.google.android.material.datepicker.MaterialDatePicker;
@@ -20,9 +26,10 @@ import com.yezhik_ya.helper.inputValidators.Rule;
 import com.yezhik_ya.helper.inputValidators.RuleOperation;
 import com.yezhik_ya.helper.inputValidators.TextRule;
 import com.yezhik_ya.helper.inputValidators.Validator;
+import com.yezhik_ya.model.BlogPost;
 import com.yezhik_ya.viewmodel.BlogsViewModel;
+import com.yezhik_ya.viewmodel.GenericViewModelFactory;
 
-import java.io.ObjectInputValidation;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -35,6 +42,9 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
 {
     private EditText etAuthor, etTitle, etContent, etDate;
     private ImageButton ibCalendar;
+    private Button btnSave, btnCancel;
+    private BlogsViewModel blogsViewModel;
+    private BlogPost oldBlogPost;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -42,6 +52,8 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
         setContentView(R.layout.activity_blog_post);
 
         initializeViews();
+
+        setObservers();
     }
 
     @Override
@@ -52,6 +64,8 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
         etContent = findViewById(R.id.etContent);
         etDate = findViewById(R.id.etDate);
         ibCalendar = findViewById(R.id.ibCalendar);
+        btnSave = findViewById(R.id.btnSave);
+        btnCancel = findViewById(R.id.btnCancel);
 
         setListeners();
     }
@@ -113,6 +127,38 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
                 picker.show(getSupportFragmentManager(), "DATE PICKER");
             }
         });
+
+        btnSave.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                if(validate())
+                {
+                    BlogPost blogPost = new BlogPost();
+                    blogPost.setAuthor(etAuthor.getText().toString());
+                    blogPost.setTitle(etTitle.getText().toString());
+                    blogPost.setDate(DateUtil.stringDateToLong(etDate.getText().toString()));
+                    blogPost.setContent(etContent.getText().toString());
+                    if (oldBlogPost != null)
+                        blogPost.setIdFs(oldBlogPost.getIdFs());
+
+                    blogsViewModel.add(blogPost);
+
+                    Intent intent = new Intent(getApplicationContext(), PostsActivity.class);
+                    intent.putExtra("POST", blogPost);
+                    startActivity(intent);
+                    //setResult(RESULT_OK, intent);
+                    //finish();
+                }
+            }
+        });
+
+        btnCancel.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) { finish(); }
+        });
     }
 
     @Override
@@ -138,5 +184,19 @@ public class BlogPostActivity extends BaseActivity implements EntryValidation
     public boolean validate()
     {
         return Validator.validate();
+    }
+    private void setObservers()
+    {
+        GenericViewModelFactory<BlogsViewModel> factory = new GenericViewModelFactory<> (getApplication(), BlogsViewModel::new);
+        blogsViewModel = new ViewModelProvider(this, factory).get(BlogsViewModel.class);
+        blogsViewModel.getSuccessOperation().observe(this, new Observer<Boolean>()
+        {
+                @Override
+                public void onChanged(Boolean aBoolean)
+                {
+                    if (aBoolean)
+                        Toast.makeText(BlogPostActivity.this, "Saved successfully !", Toast.LENGTH_SHORT).show();
+                }
+        });
     }
 }

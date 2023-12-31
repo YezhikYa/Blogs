@@ -1,4 +1,6 @@
 package com.yezhik_ya.model;
 
-public class BlogPosts {
+public class BlogPosts extends BaseList<BlogPost, BlogPosts>
+{
+
 }
