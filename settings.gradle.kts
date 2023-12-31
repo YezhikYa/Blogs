@@ -17,5 +17,5 @@ rootProject.name = "Blogs"
 include(":app")
 include(":MODEL")
 include(":HELPER")
-include(":REPOSITORY")
 include(":VIEWMODEL")
+include(":REPOSITORY")

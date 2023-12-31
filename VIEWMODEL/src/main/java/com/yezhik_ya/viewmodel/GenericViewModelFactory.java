@@ -30,6 +30,7 @@ public class GenericViewModelFactory<T extends ViewModel> implements ViewModelPr
 
         throw new IllegalArgumentException("Unknown ViewModel class: " + modelClass.getName());
     }
+
 }
 
 

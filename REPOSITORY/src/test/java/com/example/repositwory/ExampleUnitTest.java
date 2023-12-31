@@ -1,4 +1,4 @@
-package com.yezhik_ya.repository;
+package com.example.repositwory;
 
 import static org.junit.Assert.assertEquals;
 

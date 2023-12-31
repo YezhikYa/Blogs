@@ -6,32 +6,30 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.repositwory.BlogsRepository;
 import com.yezhik_ya.model.BlogPost;
 import com.yezhik_ya.model.BlogPosts;
-import com.yezhik_ya.repository.BlogsRepository;
 
 public class BlogsViewModel extends ViewModel
 {
-    private BlogsRepository repository;
     private MutableLiveData<Boolean> successOperation;
-    private MutableLiveData<BlogPosts> blogPostsLiveData;
+    private BlogsRepository repository;
+    private MutableLiveData<BlogPosts> blogsPostsLiveData;
 
-    public BlogsViewModel(Context context)
-    {
-        blogPostsLiveData = new MutableLiveData<>();
+    public BlogsViewModel() { successOperation = new MutableLiveData<>(); }
+    public BlogsViewModel(Context context){
         successOperation = new MutableLiveData<>();
         repository = new BlogsRepository(context);
+        blogsPostsLiveData = new MutableLiveData<>();
     }
-    public void add(BlogPost blogPost){
+
+
+    public void add(BlogPost blogPosts) {
         repository.add(blogPost)
-                .addOnSuccessListener(aBoolean ->
-                {successOperation.setValue(true);})
-                .addOnFailureListener(e ->
-                {successOperation.setValue(false);});
+                .addOnSuccessListener(aBoolean -> {successOperation.setValue(true);})
+                .addOnFailureListener(e ->{successOperation.setValue(false);});
     }
+
     public LiveData<Boolean> getSuccessOperation() { return successOperation; }
-    public LiveData<BlogPosts> getAll(){
-        blogPostsLiveData = repository.getAll();
-        return blogPostsLiveData;
-    }
+
 }
