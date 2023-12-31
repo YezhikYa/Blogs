@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable calendar
+drawable exclamation_mark
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable loading
+drawable plus
+id btnAddPost
+id btnCancel
+id btnSave
+id etAuthor
+id etContent
+id etDate
+id etTitle
+id fabAdd
+id ibCalendar
+id rv
+id textView
+id textView2
+id textView3
+layout activity_base
+layout activity_blog_post
+layout activity_main
+layout activity_posts
+layout single_post
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Blogs
+style Theme.Blogs
+xml backup_rules
+xml data_extraction_rules

@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\layout_activity_posts.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\layout\\activity_posts.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\layout_activity_blog_post.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\layout\\activity_blog_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\drawable_loading.jpg.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\drawable\\loading.jpg"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.yezhik_ya.blogs.app-merged_res-38:/layout_single_post.xml.flat",
+        "source": "com.yezhik_ya.blogs.app-main-40:/layout/single_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\layout_activity_base.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\layout\\activity_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\drawable_plus.png.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\drawable\\plus.png"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\drawable_exclamation_mark.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\drawable\\exclamation_mark.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-merged_res-38:\\drawable_calendar.png.flat",
+        "source": "C:\\Users\\nati\\.gradle\\daemon\\8.0\\com.yezhik_ya.blogs.app-main-40:\\drawable\\calendar.png"
+    }
+]
